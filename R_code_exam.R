@@ -15,7 +15,7 @@
 # --- Install and Load Required Packages ---
 
 # Install necessary libraries if not already installed
-# install.packages(c("terra", "raster", "patchwork", "ggplot2", "devtools"))
+# install.packages(c("terra", "patchwork", "ggplot2", "devtools"))
 # library(devtools) # Load the devtools package to download packages from Github
 # devtools::install_github("ducciorocchini/imageRy", force = TRUE) # Install the imageRy package from Github
 
@@ -34,7 +34,6 @@ cat("Working directory set to:", current_path, "\n")
 library(terra)
 library(ggplot2)
 library(patchwork)
-library(raster)
 library(imageRy)
 
 
@@ -301,3 +300,4 @@ p_ndvi + p_forest
 
 # Also printing the data frame to inspect the numeric trends
 print(ts_data)
+1
